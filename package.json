@@ -1,13 +1,35 @@
 {
-	"name": "jsdoc-swagger-parser",
-	"version": "0.1.0",
-	"description": "",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
-	"author": "Ryan London",
-	"license": "MIT"
+  "name": "jsdoc-swagger-parser",
+  "version": "0.1.0",
+  "description": "automatic swagger documentation generator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanlondon/jsdoc-swagger-parser"
+  },
+  "keywords": [],
+  "author": "Ryan London",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.7",
+    "express": "^4.17.1",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.1"
+  }
 }
